@@ -1,0 +1,52 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.social__link {
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
+
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-color);
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--main-background-color);
+    }
+}
+
+// cоціальні мережі футер
+.social__title {
+    color: var(--third-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.social__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--third-text-color);
+
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
