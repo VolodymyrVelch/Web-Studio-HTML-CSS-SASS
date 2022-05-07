@@ -51,6 +51,10 @@
     &--icon {
         margin-left: 10px;
     }
+
+    @media screen and (max-width:1199px) {
+        margin: auto;
+    }
 }
 
 input::placeholder {

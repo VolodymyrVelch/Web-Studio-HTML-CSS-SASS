@@ -36,6 +36,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
+
 }
 
 .social__link--footer {
