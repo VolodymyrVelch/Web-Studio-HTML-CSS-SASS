@@ -1,11 +1,11 @@
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/normalize';
-// @import './utils/project-settings';
-@import './components/@mobile'
-// @import './components/logo';
-// @import './components/header';
-// @import './components/site-nav';
+@import './utils/project-settings';
+@import './components/@mobile';
+
+@import './components/logo';
+@import './components/header';
 // @import './components/hero';
 // @import './components/button';
 // @import './components/section-advantages';
