@@ -340,56 +340,58 @@
     <!-- Модальне вікно -->
 
     <div class="backdrop is-hidden " data-modal>
-        <div class="modal">
-            <form class="form" action="#" name="contact-form" autocomplete="on">
-                <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-                <ul>
-                    <li class="form__item">
-                        <label class="form__cont" for="name">Имя</label>
-                        <div class="form__icon--position">
-                            <input class="form__input" type="name" id="name">
-                            <svg class="form__icon" width="18" height="18">
-                                <use href="./images/icons.svg#person-black-form"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="form__item">
-                        <label class="form__cont" for="phone">Телефон</label>
-                        <div class="form__icon--position">
-                            <input class="form__input" type="tel" name="phone_number" id="phone">
-                            <svg class="form__icon" width="18" height="18">
-                                <use href="./images/icons.svg#phone-black-form"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="form__item">
-                        <label class="form__cont" for="mail">Почта</label>
-                        <div class="form__icon--position">
-                            <input class="form__input" type="email" name="email" id="mail">
-                            <svg class="form__icon" width="18" height="18">
-                                <use href="./images/icons.svg#email-form"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="form__item">
-                        <label class="form__cont" for="textarea">Комментарий</label>
-                        <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="5"
-                            placeholder="Введите текст"></textarea>
-                    </li>
-                </ul>
-                <label class="checkbox" for="agree">
-                    <input class="checkbox__input" type="checkbox" name="agree-with" id="agree">
-                    <span class="checkbox__icon"></span>
-                    <span>Соглашаюсь с рассылкой и принимаю<a class="checkbox__agriment" href="">Условия
-                            договора</a></span>
-                </label>
-                <button class="button form__button" type="submit">Отправить</button>
-            </form>
-            <button data-modal-close class="modal__close">
-                <svg width="18" height="18">
-                    <use href="./images/icons.svg#close-btn"></use>
-                </svg>
-            </button>
+        <div class="container modal-container ">
+            <div class="modal  ">
+                <form class="form" action="#" name="contact-form" autocomplete="on">
+                    <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+                    <ul>
+                        <li class="form__item">
+                            <label class="form__cont" for="name">Имя</label>
+                            <div class="form__icon--position">
+                                <input class="form__input" type="name" id="name">
+                                <svg class="form__icon" width="18" height="18">
+                                    <use href="./images/icons.svg#person-black-form"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="form__item">
+                            <label class="form__cont" for="phone">Телефон</label>
+                            <div class="form__icon--position">
+                                <input class="form__input" type="tel" name="phone_number" id="phone">
+                                <svg class="form__icon" width="18" height="18">
+                                    <use href="./images/icons.svg#phone-black-form"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="form__item">
+                            <label class="form__cont" for="mail">Почта</label>
+                            <div class="form__icon--position">
+                                <input class="form__input" type="email" name="email" id="mail">
+                                <svg class="form__icon" width="18" height="18">
+                                    <use href="./images/icons.svg#email-form"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="form__item">
+                            <label class="form__cont" for="textarea">Комментарий</label>
+                            <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="5"
+                                placeholder="Введите текст"></textarea>
+                        </li>
+                    </ul>
+                    <label class="checkbox" for="agree">
+                        <input class="checkbox__input" type="checkbox" name="agree-with" id="agree">
+                        <span class="checkbox__icon"></span>
+                        <span>Соглашаюсь с рассылкой и принимаю<a class="checkbox__agriment" href="">Условия
+                                договора</a></span>
+                    </label>
+                    <button class="button form__button" type="submit">Отправить</button>
+                </form>
+                <button data-modal-close class="modal__close">
+                    <svg width="18" height="18">
+                        <use href="./images/icons.svg#close-btn"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>

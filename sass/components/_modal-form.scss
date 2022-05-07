@@ -1,3 +1,4 @@
+// MODAL FORM
 .form {
     padding: 40px;
 }
@@ -91,14 +92,25 @@ textarea::placeholder {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
 
-.checkbox__agriment {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: var(--accent-color);
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    &__agriment {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: var(--accent-color);
+
+        @media screen and (max-width:1199px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    }
+
 }
 
 .checkbox__input {
