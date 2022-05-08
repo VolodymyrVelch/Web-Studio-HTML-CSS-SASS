@@ -34,6 +34,7 @@ html {
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
+    overflow-x: hidden;
 }
 
 /*
@@ -47,6 +48,7 @@ Remove the margin in all browsers.
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /**

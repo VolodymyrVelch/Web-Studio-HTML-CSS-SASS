@@ -100,6 +100,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  overflow-x: hidden;
 }
 
 /*
@@ -111,6 +112,7 @@ Remove the margin in all browsers.
 */
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /**
@@ -387,6 +389,7 @@ body {
   background-color: var(--third-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -577,7 +580,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .subscribe__input {
     margin: auto;
     margin-bottom: 20px;
@@ -924,8 +927,8 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .mobile-soc__item {
     display: block;
@@ -943,6 +946,9 @@ body {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
     color: var(--accent-color);
     font-weight: 500;
     font-size: 18px;
@@ -950,8 +956,6 @@ body {
     letter-spacing: 0.02em;
     -webkit-transition: color 250ms var(--timing-function);
     transition: color 250ms var(--timing-function);
-    padding-right: 5px;
-    padding-left: 5px;
   }
 }
 @media screen and (min-width: 768px) {

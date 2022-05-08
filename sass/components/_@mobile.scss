@@ -2,6 +2,7 @@
     background-color: var(--third-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 100%;
 }
 
 .footer__cont {
@@ -38,10 +39,7 @@
     @media screen and (min-width:1200px) {
         flex-grow: 1;
     }
-
-
 }
-
 
 .footer__social {
     @media screen and (max-width:767px) {
@@ -106,14 +104,12 @@
     margin-left: auto;
 
     @media screen and (max-width:767px) {
-        align-items: center;
-
+        align-items: center
     }
 
     @media screen and (min-width:1200px) {
         margin-left: 93px;
     }
-
 }
 
 .subscribe-form__title {
@@ -159,7 +155,7 @@
         margin-bottom: 20px;
     }
 
-    @media screen and (max-width:1199px) {
+    @media screen and (min-width:768px) {
         margin: auto;
         margin-bottom: 20px;
         min-width: 387px;
