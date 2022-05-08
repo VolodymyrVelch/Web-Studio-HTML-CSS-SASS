@@ -1,5 +1,13 @@
 .section--no-pading-top {
     padding-top: 0;
+
+}
+
+.section__hidden {
+    @media screen and (max-width:1199px) {
+        display: none;
+
+    }
 }
 
 .example {

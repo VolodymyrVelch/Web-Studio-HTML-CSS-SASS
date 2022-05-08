@@ -63,6 +63,7 @@
         left: 0;
         padding: 48px 40px;
         background-color: var(--main-background-color);
+        overflow-y: scroll;
 
         &.is-open {
             display: block;

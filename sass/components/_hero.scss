@@ -1,29 +1,34 @@
 .hero {
-    padding: 200px 0;
-    background-color: var(--third-background-color);
-    color: var(--third-text-color);
-    text-align: center;
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/Owerlay.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (min-width:1200px) {
+        padding: 200px 0;
+        background-color: var(--third-background-color);
+        color: var(--third-text-color);
+        text-align: center;
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/Owerlay.jpg);
+    }
 }
 
 .hero__title {
-    margin: auto;
-    margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+        margin: auto;
+        margin-bottom: 30px;
 
-    width: 696px;
-    font-weight: 900;
-    text-align: center;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+        width: 696px;
+        font-weight: 900;
+        text-align: center;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
 }
