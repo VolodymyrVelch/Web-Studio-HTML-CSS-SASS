@@ -1,6 +1,14 @@
 .advantage {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width:767px) {
+    // margin-left: -15px;
+    // margin-right: -15px;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 }
 
 .advantage__title {
@@ -20,14 +28,15 @@
 }
 
 .advantage__item {
-    padding-bottom: 30px;
+    
     @media screen and (min-width:768px){
-    width: calc((100% - 30px) / 2);
-    padding-left: 15px;
-    padding-right: 15px;
+        width: calc(( 100% - 4 * 15px ) / 2 );
+        margin-left: 15px;
+        margin-right: 15px;
     }
-
+    
     @media screen and (min-width:1200px){
+    padding-bottom: 30px;
     margin-right: var(--margin-pic);
     width: 270px;
 
