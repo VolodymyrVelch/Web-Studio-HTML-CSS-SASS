@@ -1,34 +1,71 @@
+.hero__container {
+    width: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
 .hero {
     margin-left: auto;
     margin-right: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-color: var(--third-background-color);
+
+    @media screen and (max-width:767px) {
+        background-image: url(/images/hero-img/hero_m.jpg);
+        max-width: 480px;
+        height: 400px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(/images/hero-img/hero_m2x.jpg);
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        background-image: url(/images/hero-img/hero_t.jpg);
+        max-width: 768px;
+        height: 400px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(/images/hero-img/hero_t2x.jpg);
+        }
+    }
 
     @media screen and (min-width:1200px) {
-        padding: 200px 0;
-        background-color: var(--third-background-color);
-        color: var(--third-text-color);
-        text-align: center;
         max-width: 1600px;
         height: 600px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/Owerlay.jpg);
+        background-image: url(/images/hero-img/hero_pc.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(/images/hero-img/hero_pc2x.jpg);
+        }
     }
 }
 
 .hero__title {
-    @media screen and (min-width:1200px) {
-        margin: auto;
-        margin-bottom: 30px;
+    color: var(--third-text-color);
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-transform: uppercase;
+    font-style: normal;
+    width: 360px;
+    margin-bottom: 30px;
 
+    @media screen and (min-width:1200px) {
         width: 696px;
-        font-weight: 900;
-        text-align: center;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
     }
 }
