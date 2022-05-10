@@ -20,12 +20,12 @@
     background-color: var(--third-background-color);
 
     @media screen and (max-width:767px) {
-        background-image: url('../../images/hero-img/hero_m.jpg');
+        background-image: url(../../images/hero-img/hero_m.jpg));
         max-width: 480px;
         height: 400px;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-            background-image: url('../../images/hero-img/hero_m2x.jpg');
+            background-image: url(../../images/hero-img/hero_m2x.jpg);
         }
     }
 
