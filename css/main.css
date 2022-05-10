@@ -782,14 +782,14 @@ body {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url("../../images/hero-img/hero_m.jpg");
+    background-image: url("../images/hero-img/hero_m.jpg");
     max-width: 480px;
     height: 400px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/hero-img/hero_m2x.jpg");
+    background-image: url("../images/hero-img/hero_m2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -1719,7 +1719,7 @@ textarea::placeholder {
   border-radius: 4px;
   background-position: 50% 50%;
   background-origin: border-box;
-  background-image: url(../images/icon\ check-form.svg);
+  background-image: url(../images/icon_check-form.svg);
 }
 
 .button.form__button {
