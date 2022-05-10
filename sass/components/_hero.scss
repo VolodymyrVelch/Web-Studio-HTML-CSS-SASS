@@ -21,7 +21,6 @@
 
     @media screen and (max-width:767px) {
         background-image: url('../images/hero-img/hero_m.jpg');
-        ;
         max-width: 480px;
         height: 400px;
 
@@ -32,24 +31,24 @@
     }
 
     @media screen and (min-width:768px) {
-        background-image: url('../../images/hero-img/hero_t.jpg');
+        background-image: url('../images/hero-img/hero_t.jpg');
         max-width: 768px;
         height: 400px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx) {
-            background-image: url('../../images/hero-img/hero_t2x.jpg');
+            background-image: url('../images/hero-img/hero_t2x.jpg');
         }
     }
 
     @media screen and (min-width:1200px) {
         max-width: 1600px;
         height: 600px;
-        background-image: url('../../images/hero-img/hero_pc.jpg');
+        background-image: url('../images/hero-img/hero_pc.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx) {
-            background-image: url('../../images/hero-img/hero_pc2x.jpg');
+            background-image: url('../images/hero-img/hero_pc2x.jpg');
         }
     }
 }
