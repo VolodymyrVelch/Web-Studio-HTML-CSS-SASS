@@ -5,7 +5,6 @@
 
 .form__item:not(last-child) {
     display: flex;
-    /* width: 100%; */
     flex-direction: column;
     margin-bottom: 10px;
 }
@@ -85,32 +84,22 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
-    @media screen and (max-width:1199px) {
-        font-size: 12px;
-        line-height: 1.16;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
     }
 
     &__agriment {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        text-decoration-line: underline;
         color: var(--accent-color);
-
-        @media screen and (max-width:1199px) {
-            font-size: 12px;
-            line-height: 1.16;
-        }
     }
-
 }
 
 .checkbox__input {

@@ -23,10 +23,7 @@
 }
 
 .modal-container {
-    @media screen and (max-width:767px) {
-        padding: 93px 15px 0 15px;
-
-    }
+    padding: 93px 15px 0 15px;
 
     @media screen and (min-width:768px) {
         padding: 208px 159px 0 159px;
@@ -38,21 +35,19 @@
     background-color: var(--main-background-color);
     transition: translate 250ms var(--timing-function);
 
-    @media screen and (max-width:1199px) {
-        position: relative;
-        max-width: 450px;
-        max-height: 609px;
-    }
+    position: relative;
+    max-width: 450px;
+    max-height: 609px;
+
 
     @media screen and (min-width:1200px) {
         position: absolute;
         top: 50%;
         left: 50%;
 
-        width: 528px;
-        height: 581px;
+        max-width: 528px;
+        max-height: 581px;
         transform: translate(-50%, -50%) scale(1.1);
-
     }
 }
 
@@ -85,11 +80,11 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width:1199px) {
-        line-height: 1.5;
+    @media screen and (min-width:1200px) {
+        line-height: 1.15;
     }
 }

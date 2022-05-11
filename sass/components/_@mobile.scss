@@ -1,0 +1,48 @@
+.section--other-background {
+    background-color: var(--second-background-color);
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 4);
+    margin-top: 50px;
+}
+
+.team__item {
+    background-color: var(--main-background-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function);
+
+    &:not(:first-child) {
+        margin-left: var(--margin-pic);
+    }
+}
+
+.team__content {
+    padding: 30px 0;
+}
+
+.team__title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team__text {
+    margin-top: 10px;
+    margin-bottom: 16px;
+
+    color: var(--second-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
