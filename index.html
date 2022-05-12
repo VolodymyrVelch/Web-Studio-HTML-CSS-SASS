@@ -139,7 +139,12 @@
                 <h2 class="section__title team__section--tile">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img src="./images/IgorD.jpg" alt="Фото Игорь Демьяненко" width="270">
+                        <picture>
+                            <source srcset="./images/IgorD.jpg" media="min-width: 1200px" />
+                            <source srcset="" media="min-width: 768px" />
+                            <source srcset="" media="min-width: 480px" />
+                            <img src="./images/IgorD.jpg" alt="Фото Игорь Демьяненко">
+                        </picture>
                         <div class="team__content">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
