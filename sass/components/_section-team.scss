@@ -2,11 +2,20 @@
     background-color: var(--second-background-color);
 }
 
+.team__section--tile {
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+}
+
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc(100% / 4);
-    margin-top: 50px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .team__item {
@@ -18,10 +27,16 @@
     transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function);
 
-    &:not(:first-child) {
-        margin-left: var(--margin-pic);
+    @media screen and (min-width:768px) {
+        margin: 15px;
+        width: calc(100% / 2 - 30px);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: calc(100% / 4 - 30px);
     }
 }
+
 
 .team__content {
     padding: 30px 0;
