@@ -264,18 +264,25 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/section__team/desk/imgmihail_d2x-min.jpg 2x,
+                            <source 
+                            media="(min-width: 1200px)"
+                            srcset="./images/section__team/desk/imgmihail_d2x-min.jpg 2x, 
                             ./images/section__team/desk/imgmihail_d-min.jpg 1x"
-                             media="(min-width: 1200px)" />
-                            <source srcset="./images/section__team/tab/imgmihail_t2x-min.jpg 2x,
-                            ./images/section__team/tab/imgmihail_t-min.jpg 1x"
-                             media="(min-width: 768px)"/>
-                            <source srcset="./images/section__team/mob/imgmihail_m2x-min.jpg 2x,
-                            ./images/section__team/mob/imgmihail_m-min.jpg 1x"
-                             media="(min-width: 480px)" />
-                            <img src="./images/section__team/mob/imgmihail_m-min.jpg" alt="Фото Михаил Ермаков">
+                             />
+                            <source
+                            media="(min-width: 768px)"
+                            srcset="./images/section__team/tab/imgMihail_t2x-min.jpg 2x,
+                            ./images/section__team/tab/imgMihail_t-min.jpg"
+                             />
+                            <source 
+                            media="(min-width: 480px)"
+                            srcset="./images/section__team/mob/imgMihail_m2x-min.jpg 2x,
+                            ./images/section__team/mob/imgMihail_m-min.jpg 1x" 
+                             />
+                            <img src="./images/section__team/mob/imgMihail_m-min.jpg" alt="Фото Михаил Ермаков">
                         </picture>
                         <div class="team__content">
+                            
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
                             <ul class="social">
