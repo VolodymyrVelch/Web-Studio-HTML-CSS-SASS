@@ -474,19 +474,11 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     flex-grow: 1;
-  }
-}
-
-.nav {
-  margin-left: 0;
-}
-@media screen and (min-width: 768px) {
-  .nav {
     margin-left: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .nav {
+  .mobile-container {
     margin-left: 93px;
   }
 }
@@ -683,19 +675,8 @@ body {
   }
 }
 
-.hero__container {
-  width: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
-}
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
 .hero {
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -704,8 +685,7 @@ body {
   text-align: center;
   background-color: var(--third-background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero_m.jpg");
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
 }
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -715,8 +695,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero_t.jpg");
-    max-width: 768px;
-    height: 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -726,8 +704,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    height: 600px;
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero_pc.jpg");
   }
 }
@@ -746,12 +723,12 @@ body {
   line-height: 1.61;
   text-transform: uppercase;
   font-style: normal;
-  width: 360px;
   margin-bottom: 30px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -1417,7 +1394,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .modal-container {
-    padding: 208px 159px 0 159px;
+    padding: 140px 159px 0 159px;
   }
 }
 

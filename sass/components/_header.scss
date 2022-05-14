@@ -74,15 +74,6 @@
         flex-wrap: nowrap;
         align-items: center;
         flex-grow: 1;
-    }
-}
-
-// // Навігація
-.nav {
-    margin-left: 0;
-    // flex-grow: 1;
-
-    @media screen and (min-width: 768px) {
         margin-left: 88px;
     }
 
@@ -91,6 +82,8 @@
     }
 }
 
+
+// // Навігація
 .nav__menu {
     @media screen and (min-width: 768px) {
         display: flex;
