@@ -1394,7 +1394,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .modal-container {
-    padding: 140px 159px 0 159px;
+    padding: 90px 159px 0 159px;
   }
 }
 
