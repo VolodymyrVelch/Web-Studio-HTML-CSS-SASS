@@ -27,8 +27,10 @@
     transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function);
 
-    &:not(:last-child){
-        margin-bottom: 15px;
+    @media screen and (max-width:767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     @media screen and (min-width:768px) {

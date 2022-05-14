@@ -10,7 +10,6 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
-
 </head>
 
 <body>
@@ -32,28 +31,30 @@
                         <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
-                <ul class="contact">
-                    <li class="contact__item">
-                        <a class="contact__link contact__link--size" href="tel:+380961111111">
-                            <svg class="contact__icon" width="10" height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                    <li class="contact__item">
-                        <a class="contact__link" href="mailto:info@devstudio.com">
-                            <svg class="contact__icon" width="16" height="12">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="mobile-soc">
-                    <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
-                    <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
-                    <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
-                    <li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
-                </ul>
+                <div class="contact__container">
+                    <ul class="contact">
+                        <li class="contact__item">
+                            <a class="contact__link contact__link--size" href="tel:+380961111111">
+                                <svg class="contact__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="contact__link" href="mailto:info@devstudio.com">
+                                <svg class="contact__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-soc">
+                        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
+                        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
+                        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
+                        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -122,21 +123,18 @@
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="example">
                     <li class="example__item">
-                        <img
-                        srcset="./images/section__advantage/imgadv1-min.jpg 1x, ./images/section__advantage/imgadv1_2x-min.jpg 2x"
-                        src="./images/section__advantage/imgadv1-min.jpg" alt="Фото програмирование">
+                        <img srcset="./images/section__advantage/imgadv1-min.jpg 1x, ./images/section__advantage/imgadv1_2x-min.jpg 2x"
+                            src="./images/section__advantage/imgadv1-min.jpg" alt="Фото програмирование">
                         <p class="example__content">Десктопные приложения</p>
                     </li>
                     <li class="example__item">
-                        <img 
-                        srcset="./images/section__advantage/imgadv2-min.jpg 1x, ./images/section__advantage/imgadv2_2x-min.jpg 2x"
-                        src="./images/section__advantage/imgadv2-min.jpg" alt="Фото верстка">
+                        <img srcset="./images/section__advantage/imgadv2-min.jpg 1x, ./images/section__advantage/imgadv2_2x-min.jpg 2x"
+                            src="./images/section__advantage/imgadv2-min.jpg" alt="Фото верстка">
                         <p class="example__content">Мобильные приложения</p>
                     </li>
                     <li class="example__item">
-                        <img 
-                        srcset="./images/section__advantage/imgadv3-min.jpg 1x, ./images/section__advantage/imgadv3_2x-min.jpg 2x"
-                        src="./images/section__advantage/imgadv3-min.jpg" alt="Фото дизайн">
+                        <img srcset="./images/section__advantage/imgadv3-min.jpg 1x, ./images/section__advantage/imgadv3_2x-min.jpg 2x"
+                            src="./images/section__advantage/imgadv3-min.jpg" alt="Фото дизайн">
                         <p class="example__content">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -150,17 +148,14 @@
                     <li class="team__item">
                         <picture>
                             <source srcset="./images/section__team/desk/imgIgor_d2x-min.jpg 2x,
-                            ./images/section__team/desk/imgIgor_d-min.jpg 1x"
-                             media="(min-width: 1200px)" />
+                            ./images/section__team/desk/imgIgor_d-min.jpg 1x" media="(min-width: 1200px)" />
                             <source srcset=" ./images/section__team/tab/imgIgor_t2x-min.jpg 2x,
-                            ./images/section__team/tab/imgIgor_t-min.jpg 1x" 
-                            media="(min-width: 768px)" />
+                            ./images/section__team/tab/imgIgor_t-min.jpg 1x" media="(min-width: 768px)" />
                             <source srcset="./images/section__team/mob/imgIgor_m2x-min.jpg 2x,
-                            ./images/section__team/mob/imgIgor_m-min.jpg 1x" 
-                            media="(min-width: 480px)" />
+                            ./images/section__team/mob/imgIgor_m-min.jpg 1x" media="(max-width: 768px)" />
                             <img src="./images/section__team/mob/imgIgor_m-min.jpg" alt="Фото Игорь Демьяненко">
                         </picture>
-                        
+
                         <div class="team__content">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -187,14 +182,11 @@
                     <li class="team__item">
                         <picture>
                             <source srcset="./images/section__team/desk/imgolga_d2x-min.jpg 2x,
-                            ./images/section__team/desk/imgolga_d-min.jpg 1x"
-                             media="(min-width: 1200px)" />
+                            ./images/section__team/desk/imgolga_d-min.jpg 1x" media="(min-width: 1200px)" />
                             <source srcset="./images/section__team/tab/imgolga_t2x-min.jpg 2x,
-                            ./images/section__team/tab/imgolga_t-min.jpg 1x"
-                             media="(min-width: 768px)"/>
+                            ./images/section__team/tab/imgolga_t-min.jpg 1x" media="(min-width: 768px)" />
                             <source srcset="./images/section__team/mob/imgOlgaR_m2x-min.jpg 2x,
-                            ./images/section__team/mob/imgOlgaR_m-min.jpg 1x"
-                             media="(min-width: 480px)" />
+                            ./images/section__team/mob/imgOlgaR_m-min.jpg 1x" media="(max-width: 768px)" />
                             <img src="./images/section__team/mob/imgOlgaR_m-min.jpg" alt="Фото Ольга Репина">
                         </picture>
                         <div class="team__content">
@@ -222,21 +214,12 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source 
-                            media="(min-width: 1200px)"
-                            srcset="./images/section__team/desk/imgnikolaj_d2x-min.jpg 2x, 
-                            ./images/section__team/desk/imgnikolaj_d-min.jpg 1x"
-                             />
-                            <source
-                            media="(min-width: 768px)"
-                            srcset="./images/section__team/tab/imgNikolai_t2x-min.jpg 2x,
-                            ./images/section__team/tab/imgNikolai_t-min.jpg"
-                             />
-                            <source 
-                            media="(min-width: 480px)"
-                            srcset="./images/section__team/mob/imgNikolaiT_m2x-min.jpg 2x,
-                            ./images/section__team/mob/imgNikolaiT_m-min.jpg 1x" 
-                             />
+                            <source media="(min-width: 1200px)" srcset="./images/section__team/desk/imgnikolaj_d2x-min.jpg 2x, 
+                            ./images/section__team/desk/imgnikolaj_d-min.jpg 1x" />
+                            <source media="(min-width: 768px)" srcset="./images/section__team/tab/imgNikolai_t2x-min.jpg 2x,
+                            ./images/section__team/tab/imgNikolai_t-min.jpg" />
+                            <source media="(max-width: 768px)" srcset="./images/section__team/mob/imgNikolaiT_m2x-min.jpg 2x,
+                            ./images/section__team/mob/imgNikolaiT_m-min.jpg 1x" />
                             <img src="./images/section__team/mob/imgNikolaiT_m-min.jpg" alt="Фото Николай Тарасов">
                         </picture>
                         <div class="team__content">
@@ -264,25 +247,16 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source 
-                            media="(min-width: 1200px)"
-                            srcset="./images/section__team/desk/imgmihail_d2x-min.jpg 2x, 
-                            ./images/section__team/desk/imgmihail_d-min.jpg 1x"
-                             />
-                            <source
-                            media="(min-width: 768px)"
-                            srcset="./images/section__team/tab/imgMihail_t2x-min.jpg 2x,
-                            ./images/section__team/tab/imgMihail_t-min.jpg"
-                             />
-                            <source 
-                            media="(min-width: 480px)"
-                            srcset="./images/section__team/mob/imgMihail_m2x-min.jpg 2x,
-                            ./images/section__team/mob/imgMihail_m-min.jpg 1x" 
-                             />
+                            <source media="(min-width: 1200px)" srcset="./images/section__team/desk/imgmihail_d2x-min.jpg 2x, 
+                            ./images/section__team/desk/imgmihail_d-min.jpg 1x" />
+                            <source media="(min-width: 768px)" srcset="./images/section__team/tab/imgMihail_t2x-min.jpg 2x,
+                            ./images/section__team/tab/imgMihail_t-min.jpg" />
+                            <source media="(max-width: 768px)" srcset="./images/section__team/mob/imgMihail_m2x-min.jpg 2x,
+                            ./images/section__team/mob/imgMihail_m-min.jpg 1x" />
                             <img src="./images/section__team/mob/imgMihail_m-min.jpg" alt="Фото Михаил Ермаков">
                         </picture>
                         <div class="team__content">
-                            
+
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
                             <ul class="social">
@@ -401,7 +375,7 @@
                         <li class="form__item">
                             <label class="form__cont" for="name">Имя</label>
                             <div class="form__icon--position">
-                                <input class="form__input" type="name" id="name">
+                                <input class="form__input" type="text" id="name">
                                 <svg class="form__icon" width="18" height="18">
                                     <use href="./images/icons.svg#person-black-form"></use>
                                 </svg>
